@@ -82,7 +82,6 @@ support-ops-agent/
 │   └── sso-postmortem.md
 ├── scripts/
 │    ├── seed_db.py
-│    ├── benchmark_api.py
 │    └── evaluate_model.py 
 ├── .env.example
 ├── requirements.txt 
@@ -91,11 +90,9 @@ support-ops-agent/
 ```
 ## Evaluation
 
-The project includes lightweight evaluation scripts for both answer quality and API performance.
+An evaluation script is included to evaluate the overall quality of the agent.  
 
-### 1. Model-level evaluation
-
-Scores the agent on:
+The script scores the agent on:
 - schema validity
 - severity accuracy
 - root-cause keyword recall
@@ -110,22 +107,5 @@ python3 -m scripts.evaluate_model
 ```
 
 A sample run yielded an average root-cause keyword recall of **94.4%** and an overall score of **98.3%**. 
-
-## API benchmark
-
-Measures:
-- success rate
-- JSON validity rate
-- schema validity rate
-- p50/p95/p99 latency
-- response size
-- status code distribution
-
-Run:
-
-```bash
-python3 -m scripts.benchmark_api --base-url http://localhost:8000 --runs 30
-```
-
 
 
