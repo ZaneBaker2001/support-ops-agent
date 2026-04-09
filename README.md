@@ -108,4 +108,8 @@ python3 -m scripts.evaluate_model
 
 A sample run yielded an average root-cause keyword recall of **94.4%** and an overall score of **98.3%**. 
 
+Key takeaways:
+- The agent successfully identifies nearly all critical technical symptoms and causes documented in the knowledge runbooks, minimizing the risk of "missing the point" during an incident.
+- The system is robust enough to feed downstream automated systems without formatting errors.
+
 
