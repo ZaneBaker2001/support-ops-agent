@@ -90,7 +90,7 @@ support-ops-agent/
 ```
 ## Evaluation
 
-An evaluation script is included to evaluate the overall quality of the agent.  
+An evaluation script is included to assess the overall quality of the agent.  
 
 The script scores the agent on:
 - schema validity
