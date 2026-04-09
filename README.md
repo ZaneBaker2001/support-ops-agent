@@ -109,7 +109,7 @@ Run:
 python3 -m scripts.evaluate_model
 ```
 
-A sample run yielded an average root keyword recall of 94.4% and an overall score of 98.3%. 
+A sample run yielded an average root-cause keyword recall of **94.4%** and an overall score of **98.3%**. 
 
 ## API benchmark
 
