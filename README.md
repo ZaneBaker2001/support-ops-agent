@@ -41,14 +41,23 @@ export USE_MOCK_LLM=true
 uvicorn app.api:app --reload
 ```
 
-Example request:
+## Docker Setup
+
+```bash
+docker build -t support-ops-agent .
+docker run -p 8000:8000 support-ops-agent
+```
+
+## Sample Request and Response
+
+Sample request:
 ```curl
 curl -X POST http://localhost:8000/v1/ask \
   -H "Content-Type: application/json" \
   -d '{"question":"We saw a spike in failed password reset tickets this week. Summarize likely causes and next actions."}'
 ```
 
-Example response:
+Sample response:
 ```json
 {
   "summary": "This week’s failures appear concentrated in the password-reset flow. The most likely causes are delayed delivery, invalid or expiring tokens, mobile/browser flow issues, and spam filtering for some recipients.",
