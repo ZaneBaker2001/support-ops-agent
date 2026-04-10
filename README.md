@@ -1,6 +1,6 @@
 # Support Ops Agent
 
-A production-style agentic AI service built with LangChain and FastAPI.
+An AI service built with LangChain and FastAPI.
 
 ## Features
 
