@@ -32,15 +32,11 @@ Install the required packages:
 pip3 install -r requirements.txt
 ```
 
-Setup the project:
+Run the app:
 ```
 cp .env.example .env
 mkdir -p data knowledge
 python3 scripts/seed_db.py
-```
-
-Run the app:
-```
 export USE_MOCK_LLM=true
 uvicorn app.api:app --reload
 ```
