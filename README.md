@@ -77,6 +77,8 @@ KNOWLEDGE_DIR=./knowledge
 LOG_LEVEL=INFO
 ```
 
+This file can be customized. 
+
 ## Directory Structure 
 
 ```
