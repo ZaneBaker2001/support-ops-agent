@@ -13,13 +13,34 @@ A production-style agentic AI service built with LangChain and FastAPI.
 
 ## Quickstart
 
+Clone the repository:
+
+```bash
+git clone https://github.com/ZaneBaker2001/support-ops-agent.git
+cd support-ops-agent
+```
+
+Activate a virtual environment:
+
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
+
+Install the required packages:
+```
 pip3 install -r requirements.txt
+```
+
+Setup the project:
+```
 cp .env.example .env
 mkdir -p data knowledge
 python3 scripts/seed_db.py
+```
+
+Run the app:
+```
 export USE_MOCK_LLM=true
 uvicorn app.api:app --reload
 ```
